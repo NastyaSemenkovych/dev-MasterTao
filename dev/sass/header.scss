@@ -7,8 +7,9 @@
 }
 .nav-link {
     color: $color;
+
     &:hover {
-        color: $primary-color;
+        color: $secondary-color;
 
     }
 }
