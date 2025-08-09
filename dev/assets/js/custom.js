@@ -11,17 +11,16 @@
   loop: true,
   spaceBetween: 24,
   
-
+ navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+      },
 
   pagination: {
     clickable: true,
     el: '.swiper-pagination',
   },
 
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
+  
  
 });
