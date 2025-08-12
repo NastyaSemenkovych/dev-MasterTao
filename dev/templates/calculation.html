@@ -8,22 +8,42 @@
 				<div class="form-column">
 					<div class="input-box">
 						<label for="product-category">Категория товара:</label>
-						<input id="product-category" type="text" />
+						<input
+							id="product-category"
+							type="text"
+							placeholder="Категория товара"
+							inputmode="text"
+						/>
 					</div>
 
 					<div class="input-box">
 						<label for="cargo-weight">Вес груза (кг)</label>
-						<input id="cargo-weight" type="number" />
+						<input
+							id="cargo-weight"
+							type="number"
+							placeholder="Введите вес"
+							inputmode="numeric"
+						/>
 					</div>
 				</div>
 				<div class="form-column">
 					<div class="input-box">
 						<label for="cargo-cost">Стоимость груза:</label>
-						<input id="cargo-cost" type="number" />
+						<input
+							id="cargo-cost"
+							type="number"
+							placeholder="Введите стоимость"
+							inputmode="numeric"
+						/>
 					</div>
 					<div class="input-box">
 						<label for="cargo-volume">Объем груза (м3):</label>
-						<input id="cargo-volume" type="number" />
+						<input
+							id="cargo-volume"
+							type="number"
+							placeholder="Введите объем"
+							inputmode="numeric"
+						/>
 					</div>
 				</div>
 
@@ -40,14 +60,21 @@
 				<div class="form-column">
 					<div class="input-box">
 						<label for="HS-code">Код ТН ВЭД</label>
-						<input id="HS-code" type="number" />
+						<input
+							id="HS-code"
+							type="number"
+							placeholder="Введите код"
+							inputmode="numeric"
+						/>
 					</div>
 				</div>
 			</div>
 
 			<div class="for-row">
 				<div class="input-box">
-					<input type="file" />
+					<div id="file-name" class="file-name"></div>
+					<input id="calculation-file" type="file" />
+					<label for="calculation-file">Загрузить фото товара</label>
 				</div>
 			</div>
 			<a href="#" class="btn btn-lg btn-primary"
@@ -55,6 +82,10 @@
 				<img src="./assets/img/icon-arrow-left.svg" alt="icon-arrow"
 			/></a>
 		</form>
-		<!-- <img src="./asssets/img/calculation-person.png" alt="person"> -->
+		<img
+			src="./assets/img/calculation-person.png"
+			class="calculation-img"
+			alt="person"
+		/>
 	</div>
 </section>
