@@ -1,3 +1,6 @@
+@use 'variables' as variables;
+
+
 
 .swiper {
   width: 100%;
@@ -13,7 +16,7 @@
 
     .swiper-slide {
     min-height: 700px;
-    background-color: $bg-color-accent;
+    background-color: variables.$bg-color-accent;
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -72,7 +75,7 @@ margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 13px);
    
     margin-top: 0;
         &:hover {
-           color: $secondary-color;
+           color: variables.$secondary-color;
         }
     }
  }
