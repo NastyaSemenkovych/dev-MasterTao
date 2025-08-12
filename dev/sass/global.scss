@@ -17,23 +17,8 @@ body {
 }
 
 
-
-.fw-300 {
-    font-weight: 300;
-}
-.fw-400 {
-    font-weight: 400;
-}
-.fw-600 {
-    font-weight: 600;
-}
-.fw-700 {
-    font-weight: 700;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    line-height: 1.26;
-    font-weight: 700;
+section {
+    margin-bottom: $section-margin;
 }
 
 
@@ -66,6 +51,25 @@ h6{
    font-size: 17px;
       line-height: 1.26;
 }
+
+.fw-300 {
+    font-weight: 300;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-700 {
+    font-weight: 700;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    line-height: 1.26;
+    font-weight: 700;
+}
+
 
 .btn {
     font-size: 15px;
