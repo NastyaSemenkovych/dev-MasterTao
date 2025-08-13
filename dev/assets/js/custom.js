@@ -1,3 +1,8 @@
+ const selects = document.querySelectorAll('select')
+selects.forEach(item => NiceSelect.bind(item))  
+  
+//  , {placeholder: 'text'}
+  
   const btnBurger = document.querySelector('.hamburger')
   
 
