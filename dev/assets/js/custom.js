@@ -1,3 +1,8 @@
+ const selects = document.querySelectorAll('select')
+selects.forEach(item => NiceSelect.bind(item))  
+  
+//  , {placeholder: 'text'}
+  
   const btnBurger = document.querySelector('.hamburger')
   
 
@@ -30,4 +35,20 @@ const banner = document.querySelector('.swiper-banner');
 const headerHeight = header.offsetHeight
 
 banner.setAttribute('style' , '--header-height:' + headerHeight + 'px')
+
+const inputCheckBox = document.querySelectorAll('input[type="checkbox"]');
+
+inputCheckBox.forEach(item => {
+  item.closest('.input-box').classList.add('input-box_checkbox')
+
+})
+
+
+const fileInput = document.querySelector('#calculation-file');
+const fileName = document.querySelector('#file-name')
+
+fileInput.addEventListener('change', () => {
+   fileName.innerHTML = fileInput.files[0].name;
+});
+
 

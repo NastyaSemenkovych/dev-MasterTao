@@ -20,23 +20,8 @@ body {
 }
 
 
-
-.fw-300 {
-    font-weight: 300;
-}
-.fw-400 {
-    font-weight: 400;
-}
-.fw-600 {
-    font-weight: 600;
-}
-.fw-700 {
-    font-weight: 700;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    line-height: 1.26;
-    font-weight: 700;
+section {
+    margin-bottom: $section-margin;
 }
 
 
@@ -70,6 +55,25 @@ h6{
       line-height: 1.26;
 }
 
+.fw-300 {
+    font-weight: 300;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-700 {
+    font-weight: 700;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    line-height: 1.26;
+    font-weight: 700;
+}
+
+
 .btn {
     font-size: 15px;
     border-radius: 90px;
@@ -77,11 +81,15 @@ h6{
     color: variables.$color;
     border-color: variables.$primary-color;
     padding: 12px 27px ;
+    
+
+    
     &:hover {
         background-color: transparent;
         border-color: variables.$primary-color;
     }
 
+    
     &.btn-sm {
         padding: 12px 18px;
     }
@@ -89,8 +97,10 @@ h6{
     &.btn-lg {
          font-size: 16px;
          padding: 19px 21px 19px 33px;
+         margin-top: 29px;
          img { 
             margin-left: 48px;
+            
 
          }
 
@@ -106,7 +116,7 @@ h6{
 .template-title {
     text-align: center;
     position: relative;
-    padding-bottom: 70px;
+    padding-bottom: 52px;
     margin: 0;
     h2 {
         text-transform: uppercase;
