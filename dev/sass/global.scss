@@ -137,7 +137,9 @@ input {
            }
        }
 
-    
+     &::placeholder {
+        color: #CBCBCB;
+     }
 
 }
 
