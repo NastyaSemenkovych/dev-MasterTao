@@ -188,6 +188,27 @@ input[type='checkbox']:checked + label:before {
 }
 
 
+.bg-accent {
+  position: relative;
+  padding: 90px 0 100px;
+
+  .container {
+      padding-left: 100px;
+      padding-right: 100px;
+  }
+
+  &::before {
+     content: "";
+     position: absolute;
+     inset: 0 50px;
+     background-color: variables.$bg-color-accent;
+     max-width: 1820px;
+     margin-right: auto;
+     margin-left: auto;
+     border-radius: 20px;
+   }
+}
+
 
 .btn {
     font-size: 15px;

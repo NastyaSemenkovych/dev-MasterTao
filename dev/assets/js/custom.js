@@ -52,3 +52,46 @@ fileInput.addEventListener('change', () => {
 });
 
 
+const advantagesSlideLength = document.querySelectorAll('.advantages .swiper-slide').length;
+
+const swiperAdvantages = new Swiper('#advantages', {
+  spaceBetween: 12,
+  loop: true,
+  simulateTouch: true,
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    enabled: true,
+  },
+  breakpoints: {
+    1025: {
+      spaceBetween: 0,
+      loop: false,
+      slidesPerView: advantagesSlideLength,
+      slidesPerGroup: advantagesSlideLength,
+      simulateTouch: false,
+      pagination: {
+        enabled: false,
+        el: '.swiper-pagination',
+      },
+    },
+  },
+});
+
+
+const swiper = new Swiper('.swiper', {
+  spaceBetween: 12,
+  direction: 'vertical',
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
