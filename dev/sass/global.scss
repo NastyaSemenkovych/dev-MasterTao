@@ -55,18 +55,6 @@ h6{
       line-height: 1.26;
 }
 
-.fw-300 {
-    font-weight: 300;
-}
-.fw-400 {
-    font-weight: 400;
-}
-.fw-600 {
-    font-weight: 600;
-}
-.fw-700 {
-    font-weight: 700;
-}
 
 h1,h2,h3,h4,h5,h6 {
     line-height: 1.26;
@@ -187,16 +175,15 @@ input[type='checkbox']:checked + label:before {
   background: url(/assets/img/checked.svg) center  no-repeat #fff;
 }
 
-
 .bg-accent {
   position: relative;
   padding: 90px 0 100px;
-
+   max-height: 750px;
   .container {
+      max-width: 1364px;
       padding-left: 100px;
-      padding-right: 100px;
+      padding-right: 100px;  
   }
-
   &::before {
      content: "";
      position: absolute;
@@ -206,9 +193,22 @@ input[type='checkbox']:checked + label:before {
      margin-right: auto;
      margin-left: auto;
      border-radius: 20px;
+     z-index: -1;
    }
 }
 
+.fw-300 {
+    font-weight: 300;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-700 {
+    font-weight: 700;
+}
 
 .btn {
     font-size: 15px;
@@ -252,7 +252,7 @@ input[type='checkbox']:checked + label:before {
 .template-title {
     text-align: center;
     position: relative;
-    padding-bottom: 52px;
+    padding-bottom:72px;
     margin: 0;
     h2 {
         text-transform: uppercase;
@@ -397,4 +397,9 @@ h3 {
 
 .file-name {
     margin-bottom: 13px;
+}
+
+
+.swiper-wrapper {
+    max-height: 240px;
 }

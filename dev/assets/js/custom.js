@@ -59,39 +59,23 @@ const swiperAdvantages = new Swiper('#advantages', {
   loop: true,
   simulateTouch: true,
   slidesPerView: 1,
+  roundLengths: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
     enabled: true,
   },
   breakpoints: {
-    1025: {
+    992: {
       spaceBetween: 0,
-      loop: false,
-      slidesPerView: advantagesSlideLength,
+      slidesPerView: 'auto',
       slidesPerGroup: advantagesSlideLength,
+      loop: false,
       simulateTouch: false,
       pagination: {
         enabled: false,
         el: '.swiper-pagination',
       },
     },
-  },
-});
-
-
-const swiper = new Swiper('.swiper', {
-  spaceBetween: 12,
-  direction: 'vertical',
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  scrollbar: {
-    el: '.swiper-scrollbar',
   },
 });
