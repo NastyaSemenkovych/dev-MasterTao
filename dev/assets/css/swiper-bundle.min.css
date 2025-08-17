@@ -109,7 +109,7 @@
 .swiper-3d {
     perspective: 1200px
 }
-
+  
 .swiper-3d .swiper-cube-shadow,
 .swiper-3d .swiper-slide {
     transform-style: preserve-3d

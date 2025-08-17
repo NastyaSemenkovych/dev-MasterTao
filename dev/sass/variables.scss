@@ -13,3 +13,16 @@ $color: #ffffff;
 
 $section-margin : 100px;
 $section-margin-mobile: 61px;
+
+
+@mixin title-line{
+      content: "";
+      position: absolute ;
+      width: 85px;
+      height: 2px;
+      background-color: $primary-color;
+      bottom: 54px;
+      left: 50%;
+      transform: translate(-50%);
+}
+

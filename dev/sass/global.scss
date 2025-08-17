@@ -176,6 +176,7 @@ input[type='checkbox']:checked + label:before {
 }
 
 .bg-accent {
+
   position: relative;
   padding: 90px 0 100px;
    max-height: 750px;
@@ -195,6 +196,10 @@ input[type='checkbox']:checked + label:before {
      border-radius: 20px;
      z-index: -1;
    }
+
+
+
+
 }
 
 .fw-300 {
@@ -295,8 +300,8 @@ h3 {
 
      h2 {
         &::after {
-            display: inline-block;
             position: static;
+            display: inline-block;
             transform: none;
             margin: 0 0 8px 20px;
         }
@@ -400,6 +405,4 @@ h3 {
 }
 
 
-.swiper-wrapper {
-    max-height: 240px;
-}
+

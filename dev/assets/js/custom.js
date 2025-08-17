@@ -1,7 +1,7 @@
  const selects = document.querySelectorAll('select')
 selects.forEach(item => NiceSelect.bind(item))  
   
-//  , {placeholder: 'text'}
+
   
   const btnBurger = document.querySelector('.hamburger')
   
@@ -44,13 +44,14 @@ inputCheckBox.forEach(item => {
 })
 
 
-const fileInput = document.querySelector('#calculation-file');
-const fileName = document.querySelector('#file-name')
+const fileInput = document.querySelectorAll('[type="file"]');
 
-fileInput.addEventListener('change', () => {
-   fileName.innerHTML = fileInput.files[0].name;
-});
-
+fileInput.forEach(item => {
+    item.addEventListener('change', function() {
+        let fileName = item.closest('.input-box').querySelector('.file-name')
+        fileName.innerHTML = item.files[0].name;
+    })
+})
 
 const advantagesSlideLength = document.querySelectorAll('.advantages .swiper-slide').length;
 
