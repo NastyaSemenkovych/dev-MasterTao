@@ -74,14 +74,7 @@
         }
 
      .advantages .swiper-pagination {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         width: 100%;
-         left: 0 !important;
-         right: 0 !important;
-         margin: 0 auto !important;
-         position: static !important;
+          @include   variables.pagination;
        }
      
 
@@ -142,14 +135,31 @@
   }
 
   .advantage__title { 
-    margin: 0 auto 40px ;
+    margin: 0 auto 40px ; 
 }
 
+  .delivery .swiper-pagination{
+     @include variables.pagination;
+     margin-top: 33px;
+  }
+    
+  .services .swiper-pagination{
+     @include variables.pagination;
+     margin-top: 33px;
+  }
 .about {
     .container{
          flex-direction: column;
 
     } 
+     .about__img img {
+    width: 326px;
+    height: 319px;
+    max-width: 100%;
+    display: block;
+    margin: 24px auto 0 auto;
+    object-fit: contain;
+  }
   }
 }
 
