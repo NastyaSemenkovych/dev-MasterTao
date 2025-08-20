@@ -73,8 +73,17 @@
 
         }
 
-
-
+     .advantages .swiper-pagination {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         left: 0 !important;
+         right: 0 !important;
+         margin: 0 auto !important;
+         position: static !important;
+       }
+     
 
      
 
