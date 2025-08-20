@@ -285,11 +285,13 @@ h3 {
 
 &.template-title_case-2 {
     text-align: left;
+    
 
     h2 {
          &::after {
             left: 0;
             transform: none;
+            background-color: variables.$secondary-color;
          }
       }
    }

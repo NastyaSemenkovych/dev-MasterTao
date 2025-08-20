@@ -132,12 +132,19 @@
     margin-top: 6px;
   }
 
-}
-
-
-.advantage__title { 
+  .advantage__title { 
     margin: 0 auto 40px ;
 }
+
+.about {
+    .container{
+         flex-direction: column;
+
+    } 
+  }
+}
+
+
 
 
 
