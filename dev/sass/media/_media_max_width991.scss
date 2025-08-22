@@ -159,10 +159,26 @@
     display: block;
     margin: 24px auto 0 auto;
     object-fit: contain;
+   }
   }
-  }
-}
+.about__text .template-title  {
+  text-align: center;
 
+   h2 {
+         &::after {
+           @include variables.title-line;
+           background-color: variables.$secondary-color;
+             margin: 0;
+         }
+      }
+   }
+   
+ .questions__row{
+    flex-direction: column;
+
+ }
+
+}
 
 
 
