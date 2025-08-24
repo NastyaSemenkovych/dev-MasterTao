@@ -178,6 +178,22 @@
 
  }
 
+
+ .partnership__content {
+    flex-direction: column;
+     
+ }
+
+  .partnership__content-item {
+    width: 100%;
+    gap: 36px;
+  }
+
+
+ .order-mobile-negative {
+    order: -1;
+ }
+
 }
 
 
