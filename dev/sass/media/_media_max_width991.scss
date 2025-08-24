@@ -194,6 +194,29 @@
     order: -1;
  }
 
+ .footer__row {
+     flex-direction: column;
+     align-items: center;
+     gap: 32px;
+     padding-top: 24px;
+ }
+
+ .footer__col_logo {
+     text-align: center;
+     margin-top: 30px;
+
+     .footer__contacts {
+         text-align: center;
+     }
+
+     .footer__socials {
+         justify-content: center;
+         
+     }
+ }
+   .footer__col:not(.footer__col_logo) {
+       display: none;
+   }
 }
 
 
